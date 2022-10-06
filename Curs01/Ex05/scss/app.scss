@@ -6,6 +6,12 @@ ul {
       color: red;
     }
   }
+
+  a {
+    &:active {
+      color: purple;
+    }
+  }
 }
 
 .para {
@@ -24,5 +30,11 @@ ul {
   .reverse & {
     width: 100%;
     padding: 10px 20px;
+  }
+}
+
+a {
+  .all-visited & {
+    text-decoration: line-through;
   }
 }

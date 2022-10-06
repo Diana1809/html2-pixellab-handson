@@ -4,6 +4,9 @@ ul a {
 ul a:hover {
   color: red;
 }
+ul a:active {
+  color: purple;
+}
 
 .para {
   padding: 10px 20px;
