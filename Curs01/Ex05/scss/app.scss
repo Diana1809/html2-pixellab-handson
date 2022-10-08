@@ -12,6 +12,12 @@ ul {
       color: purple;
     }
   }
+
+  a {
+    &:visited {
+      color: green;
+    }
+  }
 }
 
 .para {
@@ -36,5 +42,25 @@ ul {
 a {
   .all-visited & {
     text-decoration: line-through;
+  }
+}
+
+ol {
+  a {
+    &:hover {
+      color: magenta;
+    }
+  }
+
+  a {
+    &:active {
+      color: pink;
+    }
+  }
+
+  a {
+    &:visited {
+      color: lightcoral;
+    }
   }
 }

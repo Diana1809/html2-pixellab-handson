@@ -7,6 +7,9 @@ ul a:hover {
 ul a:active {
   color: purple;
 }
+ul a:visited {
+  color: green;
+}
 
 .para {
   padding: 10px 20px;
@@ -23,6 +26,20 @@ ul a:active {
 .reverse .para-short {
   width: 100%;
   padding: 10px 20px;
+}
+
+.all-visited a {
+  text-decoration: line-through;
+}
+
+ol a:hover {
+  color: magenta;
+}
+ol a:active {
+  color: pink;
+}
+ol a:visited {
+  color: lightcoral;
 }
 
 /*# sourceMappingURL=style.css.map */
