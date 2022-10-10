@@ -78,5 +78,5 @@
 }
 
 .circle-border-blue {
-  border-color: blue;
+  @include circle-border-bg(blue);
 }
