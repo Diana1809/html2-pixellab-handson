@@ -3,3 +3,17 @@
   justify-content: space-between;
   margin: 16px 0;
 }
+
+$data: (
+  'main': red,
+  'primary': blue,
+  'secondary': green,
+  'tertiary': yellow,
+  'neutral': gray,
+);
+
+@each $suffix, $color in $data {
+  .btn-#{$suffix} {
+    color: $color;
+  }
+}

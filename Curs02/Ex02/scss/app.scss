@@ -1,0 +1,8 @@
+@import 'variables';
+@import './partials/partial1';
+@import './partials/partial2';
+@import './partials/partial3';
+
+.test {
+  color: $brand-main;
+}
