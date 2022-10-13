@@ -17,3 +17,15 @@ $data: (
     color: $color;
   }
 }
+
+@each $suffix, $color in $data {
+  .btn-bg-#{$suffix} {
+    background-color: $color;
+  }
+}
+
+@each $suffix, $color in $data {
+  .text-#{$suffix} {
+    color: $color;
+  }
+}
