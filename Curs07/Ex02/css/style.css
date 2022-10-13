@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: block;
+}
+
+@keyframes travel {
+  33% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  66% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.box {
+  animation: travel 10s ease-out;
+}

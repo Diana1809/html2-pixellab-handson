@@ -1,0 +1,56 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+@keyframes blink {
+  to {
+    opacity: 1;
+  }
+
+  from {
+    opacity: 0;
+  }
+}
+
+.loader {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  animation: blink 1s ease infinite alternate forwards;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-16px);
+  }
+}
+
+.loader-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.loader-dots .box {
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: brown;
+  border-radius: 50%;
+  animation: bounce 0.8s linear infinite alternate forwards;
+}
+
+.loader-dots .box:nth-child(2) {
+animation-delay: 0.4s;
+}
+
+.loader-dots ,.box:nth-child(3) {
+animation-delay: 0.8s;
+}
