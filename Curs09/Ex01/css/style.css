@@ -38,14 +38,38 @@
 }
 /* do not touch this */
 
+.flex-container-01 {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
 .flex-container-02 {
   flex-direction: row-reverse;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
+.flex-container-03 {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-container-04 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 .flex-container-05 {
-flex-direction: row-reverse;
-justify-content: space-around;
-align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-container-06 {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
 }

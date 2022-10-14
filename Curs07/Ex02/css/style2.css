@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: block;
+}
+
+@keyframes square {
+  20% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  40% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  60% {
+    transform: translate(calc(100vw - 100px));
+  }
+
+  80% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.box {
+  animation: square 10s ease-out;
+}
