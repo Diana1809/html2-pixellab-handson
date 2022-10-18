@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="ie=edge"
+  >
+
+  <!-- CSS only -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  >
   <title>Bootstrap Grid</title>
+
+  <style>
+    section[class*='bg-'] {
+      height: 180px;
+    }
+
+  </style>
 </head>
+
 <body>
-  
+  <div class="container mt-5 pt-5">
+    <section class="bg-secondary border border-info text-warning mb-3 row align-items-start">
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+    </section>
+
+    <section class="bg-danger border border-warning text-white mb-3 row align-items-center">
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+    </section>
+
+    <section class="bg-info border border-success text-success row align-items-end">
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+      <div class="col border px-3">column</div>
+    </section>
+  </div>
 </body>
+
 </html>

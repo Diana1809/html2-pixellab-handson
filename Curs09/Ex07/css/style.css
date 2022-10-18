@@ -48,3 +48,16 @@ body {
   color: #fff;
 }
 /* do not touch this */
+
+.flex-container-01 {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-01 :last-child {
+  flex-grow: 1;
+}
+
+.flex-container-01 > :first-child + .flex-item + .flex-item {
+  flex-grow: 2;
+}
