@@ -88,3 +88,12 @@
   align-self: stretch;
   height: auto;
 }
+
+.flex-container-06 {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.flex-container-06 :nth-of-type(4) {
+  align-self: flex-end;
+}
