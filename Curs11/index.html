@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Grid app</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      height: 100vh;
+      grid-template-columns: 120px 1fr 36px;
+      grid-template-rows: 100px 1fr 100px;
+    }
+
+    .top-bar {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .main {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    .side-bar {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: -1;
+    }
+
+    .right-bar {
+      grid-column-start: -2;
+      grid-column-end: -1;
+      grid-row-start: 1;
+      grid-row-end: -1;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div
+      class="top-bar"
+      style="background-color: lightblue;"
+    ></div>
+    <div
+      class="main"
+      style="background-color:lightpink"
+    ></div>
+    <div
+      class="side-bar"
+      style="background-color: brown;"
+    ></div>
+    <div
+      class="right-bar"
+      style="background-color: coral;"
+    ></div>
+  </div>
+</body>
+
+</html>
