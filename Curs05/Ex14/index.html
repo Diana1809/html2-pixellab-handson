@@ -17,15 +17,115 @@
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
   >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  >
 </head>
 
 <body>
+  <form class="my-5">
+    <header class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Formular Produs</h1>
+        </div>
+      </div>
+    </header>
 
-  <div
-    class="pixeltab-host"
-    id="html02-05-14"
-  ></div>
-  <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script>
+    <main>
+      <section class="container">
+        <header class="row">
+          <div class="col">
+            <h2>Produs</h2>
+          </div>
+        </header>
+
+        <fieldset class="row">
+          <div class="col-12 col-lg-6 mt-2 mt-lg-0 d-flex flex-column gap-2">
+            <div>
+              <label
+                class="form-label"
+                for="recipe-image"
+              >Imagine principala *
+              </label>
+
+              <input
+                type="file"
+                class="form-control"
+                name="recipe-image"
+                id="recipe-image"
+                required
+              >
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex flex-column gap-2">
+              <div class="input-group">
+                <label
+                  for="product-name"
+                  class="input-group-text"
+                >Numele produsului *</label>
+
+                <input
+                  type="text"
+                  class="form-control"
+                  name="product-name"
+                  id="product-name"
+                  placeholder="Numele produsului*"
+                  required
+                >
+              </div>
+
+              <div class="input-group">
+                <label
+                  for="recipe-description"
+                  class="input-group-text"
+                >
+                  Descriere lunga *
+                </label>
+
+                <textarea
+                  class="form-control"
+                  name="recipe-description"
+                  id="recipe-description"
+                  cols="16"
+                  rows="10"
+                  placeholder="Descriere lunga"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="input-group">
+                <label
+                  for="recipe-description"
+                  class="input-group-text"
+                >
+                  Descriere scurta *
+                </label>
+
+                <textarea
+                  class="form-control"
+                  name="recipe-description"
+                  id="recipe-description"
+                  cols="16"
+                  rows="4"
+                  placeholder="Descriere scurta"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+
+
+
+            <!-- <div
+              class="pixeltab-host"
+              id="html02-05-14"
+            ></div>
+            <script src="https://pixellab.ro/js/pixeltab/static/js/pixeltab.js"></script> -->
 </body>
 
 </html>
