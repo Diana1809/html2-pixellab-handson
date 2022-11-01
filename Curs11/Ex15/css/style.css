@@ -25,3 +25,55 @@
   background-color: lightsteelblue;
 }
 /* can't touch this 🔨 */
+
+.grid-container {
+  display: grid;
+  max-width: 1920px;
+  min-width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  grid-template-areas:
+    'header'
+    'filters'
+    'content'
+    'sidebar'
+    'footer';
+}
+
+.grid-item-1 {
+  grid-area: header;
+}
+
+.grid-item-2 {
+  grid-area: filters;
+}
+
+.grid-item-3 {
+  grid-area: content;
+}
+
+.grid-item-4 {
+  grid-area: sidebar;
+  display: none;
+}
+
+.grid-item-5 {
+  grid-area: footer;
+}
+
+@media (min-width: 800px) {
+  .grid-container {
+    grid-template-columns: 400px 10px 1fr;
+    grid-template-areas:
+      'header header header'
+      'sidebar .filters'
+      'sidebar .content'
+      'footer footer footer';
+  }
+}
+
+@media (min-width: 800px) {
+  .grid-item-4 {
+    display: block;
+  }
+}
